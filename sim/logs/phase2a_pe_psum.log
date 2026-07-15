@@ -1,0 +1,26 @@
+================================================
+  PE Spatial & psum Testbench  (Phase 2a)
+================================================
+
+--- Test 1: psum passthrough (weight=0) ---
+[PASS] PE0 psum_out with weight=0 matches psum_in : expected 305419896, got 305419896
+
+--- Test 2: single PE partial sum (non-zero) ---
+[PASS] PE0 psum_out == psum_in + weight * act_in : expected 150, got 150
+
+--- Test 3: act_out delay ---
+[PASS] pe0_act_out matches act_in delayed 1 cycle : expected 77, got 77
+[PASS] pe0_act_out matches act_in delayed 1 cycle (case 2) : expected -88, got -88
+
+--- Test 4: Chained PEs (PE0 -> PE1) ---
+[PASS] PE0 psum_out at cycle 1 is 28 : expected 28, got 28
+[PASS] PE0 act_out at cycle 1 is 6 : expected 6, got 6
+[PASS] PE1 psum_out at cycle 2 is 4 : expected 4, got 4
+
+================================================
+  Results: 7 passed, 0 failed
+================================================
+  >>> ALL TESTS PASSED <<<
+================================================
+
+tb/pe_psum_tb.v:238: $finish called at 106000 (1ps)

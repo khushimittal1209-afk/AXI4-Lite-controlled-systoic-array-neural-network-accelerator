@@ -1,0 +1,65 @@
+================================================
+  PE Directed Testbench  (Phase 1)
+================================================
+
+--- T1: Basic MAC — single cycle ---
+[PASS] T1 result_raw = 15 : expected 15, got 15
+[PASS] T1 result_sat = 15 : expected 15, got 15
+
+--- T2: Multi-cycle accumulation ---
+[PASS] T2 after act=7: raw = 35 : expected 35, got 35
+[PASS] T2 after act=3: raw = 50 : expected 50, got 50
+[PASS] T2 after act=2: raw = 60 : expected 60, got 60
+
+--- T3: Weight latch stability ---
+[PASS] T3 acc = 10*5 = 50 : expected 50, got 50
+[PASS] T3 acc += 10*3 = 80 : expected 80, got 80
+[PASS] T3 weight stable (in=99 ignored): raw = 100 : expected 100, got 100
+
+--- T4: Acc clear preserves weight ---
+[PASS] T4 acc cleared to 0 : expected 0, got 0
+[PASS] T4 weight preserved: 10*6 = 60 : expected 60, got 60
+
+--- T5: Saturation upper bound ---
+[PASS] T5 raw at boundary = 127 : expected 127, got 127
+[PASS] T5 sat at boundary = 127 : expected 127, got 127
+[PASS] T5 raw above = 254 : expected 254, got 254
+[PASS] T5 sat clamped = 127 : expected 127, got 127
+[PASS] T5 raw far above = 381 : expected 381, got 381
+[PASS] T5 sat still clamped = 127 : expected 127, got 127
+
+--- T6: Saturation lower bound ---
+[PASS] T6 raw at boundary = -128 : expected -128, got -128
+[PASS] T6 sat at boundary = -128 : expected -128, got -128
+[PASS] T6 raw below = -256 : expected -256, got -256
+[PASS] T6 sat clamped = -128 : expected -128, got -128
+[PASS] T6 raw far below = -384 : expected -384, got -384
+[PASS] T6 sat still clamped = -128 : expected -128, got -128
+
+--- T7: Negative * Negative ---
+[PASS] T7a (-5)*(-3) = 15 : expected 15, got 15
+[PASS] T7b (-128)*(-1) raw = 128 : expected 128, got 128
+[PASS] T7b (-128)*(-1) sat = 127 : expected 127, got 127
+
+--- T8: Negative * Positive ---
+[PASS] T8a (-7)*4 = -28 : expected -28, got -28
+[PASS] T8b 50*(-2) = -100 : expected -100, got -100
+
+--- T9: Global reset ---
+[PASS] T9 pre-reset: raw = 420 : expected 420, got 420
+[PASS] T9 reset: raw = 0 : expected 0, got 0
+[PASS] T9 reset: sat = 0 : expected 0, got 0
+[PASS] T9 post-reset: raw still 0 : expected 0, got 0
+[PASS] T9 weight cleared: 0*10 = 0 : expected 0, got 0
+
+--- T10: Activation pass-through ---
+[PASS] T10 act_out = 42 : expected 42, got 42
+[PASS] T10 act_out = -100 : expected -100, got -100
+
+================================================
+  Results: 34 passed, 0 failed
+================================================
+  >>> ALL TESTS PASSED <<<
+================================================
+
+tb/pe_tb.v:309: $finish called at 466000 (1ps)

@@ -1,0 +1,75 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001db9bb32ce0 .scope module, "axi_lite_master_bfm" "axi_lite_master_bfm" 2 8;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "aclk";
+    .port_info 1 /INPUT 1 "aresetn";
+    .port_info 2 /OUTPUT 10 "m_axi_awaddr";
+    .port_info 3 /OUTPUT 1 "m_axi_awvalid";
+    .port_info 4 /INPUT 1 "m_axi_awready";
+    .port_info 5 /OUTPUT 32 "m_axi_wdata";
+    .port_info 6 /OUTPUT 4 "m_axi_wstrb";
+    .port_info 7 /OUTPUT 1 "m_axi_wvalid";
+    .port_info 8 /INPUT 1 "m_axi_wready";
+    .port_info 9 /INPUT 2 "m_axi_bresp";
+    .port_info 10 /INPUT 1 "m_axi_bvalid";
+    .port_info 11 /OUTPUT 1 "m_axi_bready";
+    .port_info 12 /OUTPUT 10 "m_axi_araddr";
+    .port_info 13 /OUTPUT 1 "m_axi_arvalid";
+    .port_info 14 /INPUT 1 "m_axi_arready";
+    .port_info 15 /INPUT 32 "m_axi_rdata";
+    .port_info 16 /INPUT 2 "m_axi_rresp";
+    .port_info 17 /INPUT 1 "m_axi_rvalid";
+    .port_info 18 /OUTPUT 1 "m_axi_rready";
+P_000001db9bb33640 .param/l "ADDR_WIDTH" 0 2 9, +C4<00000000000000000000000000001010>;
+P_000001db9bb33678 .param/l "DATA_WIDTH" 0 2 10, +C4<00000000000000000000000000100000>;
+o000001db9bb68fd8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6abe0_0 .net "aclk", 0 0, o000001db9bb68fd8;  0 drivers
+o000001db9bb69008 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6afa0_0 .net "aresetn", 0 0, o000001db9bb69008;  0 drivers
+o000001db9bb69038 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v000001db9bc6adc0_0 .net "m_axi_araddr", 9 0, o000001db9bb69038;  0 drivers
+o000001db9bb69068 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6ae60_0 .net "m_axi_arready", 0 0, o000001db9bb69068;  0 drivers
+o000001db9bb69098 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6b0e0_0 .net "m_axi_arvalid", 0 0, o000001db9bb69098;  0 drivers
+o000001db9bb690c8 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v000001db9bc6aaa0_0 .net "m_axi_awaddr", 9 0, o000001db9bb690c8;  0 drivers
+o000001db9bb690f8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6aa00_0 .net "m_axi_awready", 0 0, o000001db9bb690f8;  0 drivers
+o000001db9bb69128 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6ad20_0 .net "m_axi_awvalid", 0 0, o000001db9bb69128;  0 drivers
+o000001db9bb69158 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6ab40_0 .net "m_axi_bready", 0 0, o000001db9bb69158;  0 drivers
+o000001db9bb69188 .functor BUFZ 2, C4<zz>; HiZ drive
+v000001db9bc6ac80_0 .net "m_axi_bresp", 1 0, o000001db9bb69188;  0 drivers
+o000001db9bb691b8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bc6af00_0 .net "m_axi_bvalid", 0 0, o000001db9bb691b8;  0 drivers
+o000001db9bb691e8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000001db9bc6b040_0 .net "m_axi_rdata", 31 0, o000001db9bb691e8;  0 drivers
+o000001db9bb69218 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bbade70_0 .net "m_axi_rready", 0 0, o000001db9bb69218;  0 drivers
+o000001db9bb69248 .functor BUFZ 2, C4<zz>; HiZ drive
+v000001db9bbae370_0 .net "m_axi_rresp", 1 0, o000001db9bb69248;  0 drivers
+o000001db9bb69278 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bbadf10_0 .net "m_axi_rvalid", 0 0, o000001db9bb69278;  0 drivers
+o000001db9bb692a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000001db9bbaf130_0 .net "m_axi_wdata", 31 0, o000001db9bb692a8;  0 drivers
+o000001db9bb692d8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bbae4b0_0 .net "m_axi_wready", 0 0, o000001db9bb692d8;  0 drivers
+o000001db9bb69308 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001db9bbadfb0_0 .net "m_axi_wstrb", 3 0, o000001db9bb69308;  0 drivers
+o000001db9bb69338 .functor BUFZ 1, C4<z>; HiZ drive
+v000001db9bbae5f0_0 .net "m_axi_wvalid", 0 0, o000001db9bb69338;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "tb/axi_lite_master_bfm.v";

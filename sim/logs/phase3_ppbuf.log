@@ -1,0 +1,32 @@
+================================================
+  Ping-Pong Buffer Testbench  (Phase 3)
+================================================
+
+--- Test 1: Reset Behavior ---
+[PASS] Bank select defaulted to 0 on reset (front is Bank 0, write went to Bank 1)
+
+--- Test 2: Basic Write/Read and Swap ---
+[PASS] Read after swap : expected 0xdeadbeef, got 0xdeadbeef
+
+--- Test 3: Write Isolation ---
+[PASS] Front bank value unchanged after back bank write : expected 0xdeadbeef, got 0xdeadbeef
+
+--- Test 4: Simultaneous Load-While-Read ---
+[PASS] Simultaneous read from front bank correct : expected 0xdeadbeef, got 0xdeadbeef
+[PASS] Simultaneous write to back bank verified after swap : expected 0x12345678, got 0x12345678
+
+--- Test 5: Multiple Swap Cycles ---
+[PASS] Pattern A [0] read correct : expected 0xaaaa0000, got 0xaaaa0000
+[PASS] Pattern A [1] read correct : expected 0xaaaa0001, got 0xaaaa0001
+[PASS] Pattern B [0] read correct : expected 0xbbbb0000, got 0xbbbb0000
+[PASS] Pattern B [1] read correct : expected 0xbbbb0001, got 0xbbbb0001
+[PASS] Pattern C [0] read correct : expected 0xcccc0000, got 0xcccc0000
+[PASS] Pattern C [1] read correct : expected 0xcccc0001, got 0xcccc0001
+
+================================================
+  Results: 11 passed, 0 failed
+================================================
+  >>> ALL TESTS PASSED <<<
+================================================
+
+tb/ping_pong_buffer_tb.v:268: $finish called at 218000 (1ps)

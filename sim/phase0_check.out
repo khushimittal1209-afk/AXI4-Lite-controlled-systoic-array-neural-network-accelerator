@@ -1,0 +1,292 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000023001af79d0 .scope module, "accelerator_top" "accelerator_top" 2 8;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "aclk";
+    .port_info 1 /INPUT 1 "aresetn";
+    .port_info 2 /INPUT 10 "s_axi_awaddr";
+    .port_info 3 /INPUT 1 "s_axi_awvalid";
+    .port_info 4 /OUTPUT 1 "s_axi_awready";
+    .port_info 5 /INPUT 32 "s_axi_wdata";
+    .port_info 6 /INPUT 4 "s_axi_wstrb";
+    .port_info 7 /INPUT 1 "s_axi_wvalid";
+    .port_info 8 /OUTPUT 1 "s_axi_wready";
+    .port_info 9 /OUTPUT 2 "s_axi_bresp";
+    .port_info 10 /OUTPUT 1 "s_axi_bvalid";
+    .port_info 11 /INPUT 1 "s_axi_bready";
+    .port_info 12 /INPUT 10 "s_axi_araddr";
+    .port_info 13 /INPUT 1 "s_axi_arvalid";
+    .port_info 14 /OUTPUT 1 "s_axi_arready";
+    .port_info 15 /OUTPUT 32 "s_axi_rdata";
+    .port_info 16 /OUTPUT 2 "s_axi_rresp";
+    .port_info 17 /OUTPUT 1 "s_axi_rvalid";
+    .port_info 18 /INPUT 1 "s_axi_rready";
+P_0000023001adb400 .param/l "ACC_WIDTH" 0 2 13, +C4<00000000000000000000000000100000>;
+P_0000023001adb438 .param/l "ADDR_WIDTH" 0 2 9, +C4<00000000000000000000000000001010>;
+P_0000023001adb470 .param/l "DATA_WIDTH" 0 2 10, +C4<00000000000000000000000000100000>;
+P_0000023001adb4a8 .param/l "INT_WIDTH" 0 2 12, +C4<00000000000000000000000000001000>;
+P_0000023001adb4e0 .param/l "N" 0 2 11, +C4<00000000000000000000000000001000>;
+o0000023001afbfa8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001c1eb80_0 .net "aclk", 0 0, o0000023001afbfa8;  0 drivers
+o0000023001afbfd8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001af1a00_0 .net "aresetn", 0 0, o0000023001afbfd8;  0 drivers
+o0000023001afc008 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v0000023001af1aa0_0 .net "s_axi_araddr", 9 0, o0000023001afc008;  0 drivers
+o0000023001afc038 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001af1b40_0 .net "s_axi_arready", 0 0, o0000023001afc038;  0 drivers
+o0000023001afc068 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001c1ec20_0 .net "s_axi_arvalid", 0 0, o0000023001afc068;  0 drivers
+o0000023001afc098 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v0000023001c1ecc0_0 .net "s_axi_awaddr", 9 0, o0000023001afc098;  0 drivers
+o0000023001afc0c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001c1ed60_0 .net "s_axi_awready", 0 0, o0000023001afc0c8;  0 drivers
+o0000023001afc0f8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001c1ee00_0 .net "s_axi_awvalid", 0 0, o0000023001afc0f8;  0 drivers
+o0000023001afc128 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001c1eea0_0 .net "s_axi_bready", 0 0, o0000023001afc128;  0 drivers
+o0000023001afc158 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000023001b4b080_0 .net "s_axi_bresp", 1 0, o0000023001afc158;  0 drivers
+o0000023001afc188 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4b120_0 .net "s_axi_bvalid", 0 0, o0000023001afc188;  0 drivers
+o0000023001afc1b8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4b1c0_0 .net "s_axi_rdata", 31 0, o0000023001afc1b8;  0 drivers
+o0000023001afc1e8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4b260_0 .net "s_axi_rready", 0 0, o0000023001afc1e8;  0 drivers
+o0000023001afc218 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000023001b4bf30_0 .net "s_axi_rresp", 1 0, o0000023001afc218;  0 drivers
+o0000023001afc248 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c250_0 .net "s_axi_rvalid", 0 0, o0000023001afc248;  0 drivers
+o0000023001afc278 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4b670_0 .net "s_axi_wdata", 31 0, o0000023001afc278;  0 drivers
+o0000023001afc2a8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4bb70_0 .net "s_axi_wready", 0 0, o0000023001afc2a8;  0 drivers
+o0000023001afc2d8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4bfd0_0 .net "s_axi_wstrb", 3 0, o0000023001afc2d8;  0 drivers
+o0000023001afc308 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4bc10_0 .net "s_axi_wvalid", 0 0, o0000023001afc308;  0 drivers
+S_0000023001af3c10 .scope module, "axi_lite_slave" "axi_lite_slave" 3 9;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "aclk";
+    .port_info 1 /INPUT 1 "aresetn";
+    .port_info 2 /INPUT 10 "s_axi_awaddr";
+    .port_info 3 /INPUT 1 "s_axi_awvalid";
+    .port_info 4 /OUTPUT 1 "s_axi_awready";
+    .port_info 5 /INPUT 32 "s_axi_wdata";
+    .port_info 6 /INPUT 4 "s_axi_wstrb";
+    .port_info 7 /INPUT 1 "s_axi_wvalid";
+    .port_info 8 /OUTPUT 1 "s_axi_wready";
+    .port_info 9 /OUTPUT 2 "s_axi_bresp";
+    .port_info 10 /OUTPUT 1 "s_axi_bvalid";
+    .port_info 11 /INPUT 1 "s_axi_bready";
+    .port_info 12 /INPUT 10 "s_axi_araddr";
+    .port_info 13 /INPUT 1 "s_axi_arvalid";
+    .port_info 14 /OUTPUT 1 "s_axi_arready";
+    .port_info 15 /OUTPUT 32 "s_axi_rdata";
+    .port_info 16 /OUTPUT 2 "s_axi_rresp";
+    .port_info 17 /OUTPUT 1 "s_axi_rvalid";
+    .port_info 18 /INPUT 1 "s_axi_rready";
+    .port_info 19 /OUTPUT 1 "ctrl_start";
+    .port_info 20 /OUTPUT 1 "ctrl_soft_reset";
+    .port_info 21 /INPUT 1 "status_busy";
+    .port_info 22 /INPUT 1 "status_done";
+    .port_info 23 /OUTPUT 8 "clk_gate_row_en";
+    .port_info 24 /OUTPUT 8 "clk_gate_col_en";
+    .port_info 25 /OUTPUT 1 "weight_wr_en";
+    .port_info 26 /OUTPUT 4 "weight_wr_addr";
+    .port_info 27 /OUTPUT 32 "weight_wr_data";
+    .port_info 28 /OUTPUT 1 "act_wr_en";
+    .port_info 29 /OUTPUT 4 "act_wr_addr";
+    .port_info 30 /OUTPUT 32 "act_wr_data";
+    .port_info 31 /OUTPUT 6 "result_raw_addr";
+    .port_info 32 /INPUT 32 "result_raw_rdata";
+    .port_info 33 /OUTPUT 4 "result_sat_addr";
+    .port_info 34 /INPUT 32 "result_sat_rdata";
+P_0000023001ab3980 .param/l "ADDR_WIDTH" 0 3 10, +C4<00000000000000000000000000001010>;
+P_0000023001ab39b8 .param/l "DATA_WIDTH" 0 3 11, +C4<00000000000000000000000000100000>;
+o0000023001afc6c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c110_0 .net "aclk", 0 0, o0000023001afc6c8;  0 drivers
+o0000023001afc6f8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4c070_0 .net "act_wr_addr", 3 0, o0000023001afc6f8;  0 drivers
+o0000023001afc728 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4bd50_0 .net "act_wr_data", 31 0, o0000023001afc728;  0 drivers
+o0000023001afc758 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c1b0_0 .net "act_wr_en", 0 0, o0000023001afc758;  0 drivers
+o0000023001afc788 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4bad0_0 .net "aresetn", 0 0, o0000023001afc788;  0 drivers
+o0000023001afc7b8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4b710_0 .net "clk_gate_col_en", 7 0, o0000023001afc7b8;  0 drivers
+o0000023001afc7e8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4bdf0_0 .net "clk_gate_row_en", 7 0, o0000023001afc7e8;  0 drivers
+o0000023001afc818 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4be90_0 .net "ctrl_soft_reset", 0 0, o0000023001afc818;  0 drivers
+o0000023001afc848 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4b350_0 .net "ctrl_start", 0 0, o0000023001afc848;  0 drivers
+o0000023001afc878 .functor BUFZ 6, C4<zzzzzz>; HiZ drive
+v0000023001b4b3f0_0 .net "result_raw_addr", 5 0, o0000023001afc878;  0 drivers
+o0000023001afc8a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4b490_0 .net "result_raw_rdata", 31 0, o0000023001afc8a8;  0 drivers
+o0000023001afc8d8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4b530_0 .net "result_sat_addr", 3 0, o0000023001afc8d8;  0 drivers
+o0000023001afc908 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4b850_0 .net "result_sat_rdata", 31 0, o0000023001afc908;  0 drivers
+o0000023001afc938 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v0000023001b4b7b0_0 .net "s_axi_araddr", 9 0, o0000023001afc938;  0 drivers
+o0000023001afc968 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4b5d0_0 .net "s_axi_arready", 0 0, o0000023001afc968;  0 drivers
+o0000023001afc998 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4b8f0_0 .net "s_axi_arvalid", 0 0, o0000023001afc998;  0 drivers
+o0000023001afc9c8 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v0000023001b4b990_0 .net "s_axi_awaddr", 9 0, o0000023001afc9c8;  0 drivers
+o0000023001afc9f8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4ba30_0 .net "s_axi_awready", 0 0, o0000023001afc9f8;  0 drivers
+o0000023001afca28 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4cb20_0 .net "s_axi_awvalid", 0 0, o0000023001afca28;  0 drivers
+o0000023001afca58 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c760_0 .net "s_axi_bready", 0 0, o0000023001afca58;  0 drivers
+o0000023001afca88 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000023001b4c800_0 .net "s_axi_bresp", 1 0, o0000023001afca88;  0 drivers
+o0000023001afcab8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4de80_0 .net "s_axi_bvalid", 0 0, o0000023001afcab8;  0 drivers
+o0000023001afcae8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4d700_0 .net "s_axi_rdata", 31 0, o0000023001afcae8;  0 drivers
+o0000023001afcb18 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d7a0_0 .net "s_axi_rready", 0 0, o0000023001afcb18;  0 drivers
+o0000023001afcb48 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000023001b4df20_0 .net "s_axi_rresp", 1 0, o0000023001afcb48;  0 drivers
+o0000023001afcb78 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4e420_0 .net "s_axi_rvalid", 0 0, o0000023001afcb78;  0 drivers
+o0000023001afcba8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4ca80_0 .net "s_axi_wdata", 31 0, o0000023001afcba8;  0 drivers
+o0000023001afcbd8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4cc60_0 .net "s_axi_wready", 0 0, o0000023001afcbd8;  0 drivers
+o0000023001afcc08 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4dd40_0 .net "s_axi_wstrb", 3 0, o0000023001afcc08;  0 drivers
+o0000023001afcc38 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4dac0_0 .net "s_axi_wvalid", 0 0, o0000023001afcc38;  0 drivers
+o0000023001afcc68 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c580_0 .net "status_busy", 0 0, o0000023001afcc68;  0 drivers
+o0000023001afcc98 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4e240_0 .net "status_done", 0 0, o0000023001afcc98;  0 drivers
+o0000023001afccc8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4cbc0_0 .net "weight_wr_addr", 3 0, o0000023001afccc8;  0 drivers
+o0000023001afccf8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4db60_0 .net "weight_wr_data", 31 0, o0000023001afccf8;  0 drivers
+o0000023001afcd28 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d5c0_0 .net "weight_wr_en", 0 0, o0000023001afcd28;  0 drivers
+S_0000023001ab2d20 .scope module, "pe" "pe" 4 9;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 1 "clk_en";
+    .port_info 3 /INPUT 1 "weight_load";
+    .port_info 4 /INPUT 8 "weight_in";
+    .port_info 5 /INPUT 8 "act_in";
+    .port_info 6 /INPUT 32 "psum_in";
+    .port_info 7 /OUTPUT 8 "act_out";
+    .port_info 8 /OUTPUT 32 "psum_out";
+P_0000023001c19040 .param/l "ACC_WIDTH" 0 4 11, +C4<00000000000000000000000000100000>;
+P_0000023001c19078 .param/l "DATA_WIDTH" 0 4 10, +C4<00000000000000000000000000001000>;
+o0000023001afd3e8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4cd00_0 .net "act_in", 7 0, o0000023001afd3e8;  0 drivers
+o0000023001afd418 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4d020_0 .net "act_out", 7 0, o0000023001afd418;  0 drivers
+o0000023001afd448 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4e1a0_0 .net "clk", 0 0, o0000023001afd448;  0 drivers
+o0000023001afd478 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d980_0 .net "clk_en", 0 0, o0000023001afd478;  0 drivers
+o0000023001afd4a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4d8e0_0 .net "psum_in", 31 0, o0000023001afd4a8;  0 drivers
+o0000023001afd4d8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4e380_0 .net "psum_out", 31 0, o0000023001afd4d8;  0 drivers
+o0000023001afd508 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4e2e0_0 .net "rst_n", 0 0, o0000023001afd508;  0 drivers
+o0000023001afd538 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4c620_0 .net "weight_in", 7 0, o0000023001afd538;  0 drivers
+o0000023001afd568 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c9e0_0 .net "weight_load", 0 0, o0000023001afd568;  0 drivers
+S_0000023001ab2eb0 .scope module, "ping_pong_buffer" "ping_pong_buffer" 5 9;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 1 "wr_en";
+    .port_info 3 /INPUT 4 "wr_addr";
+    .port_info 4 /INPUT 32 "wr_data";
+    .port_info 5 /INPUT 1 "rd_en";
+    .port_info 6 /INPUT 4 "rd_addr";
+    .port_info 7 /OUTPUT 32 "rd_data";
+    .port_info 8 /INPUT 1 "swap";
+P_0000023001af3fe0 .param/l "ADDR_WIDTH" 0 5 12, +C4<00000000000000000000000000000100>;
+P_0000023001af4018 .param/l "DATA_WIDTH" 0 5 10, +C4<00000000000000000000000000100000>;
+P_0000023001af4050 .param/l "DEPTH" 0 5 11, +C4<00000000000000000000000000010000>;
+o0000023001afd748 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c6c0_0 .net "clk", 0 0, o0000023001afd748;  0 drivers
+o0000023001afd778 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4da20_0 .net "rd_addr", 3 0, o0000023001afd778;  0 drivers
+o0000023001afd7a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4dde0_0 .net "rd_data", 31 0, o0000023001afd7a8;  0 drivers
+o0000023001afd7d8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4c8a0_0 .net "rd_en", 0 0, o0000023001afd7d8;  0 drivers
+o0000023001afd808 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d0c0_0 .net "rst_n", 0 0, o0000023001afd808;  0 drivers
+o0000023001afd838 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4dc00_0 .net "swap", 0 0, o0000023001afd838;  0 drivers
+o0000023001afd868 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023001b4e100_0 .net "wr_addr", 3 0, o0000023001afd868;  0 drivers
+o0000023001afd898 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4c940_0 .net "wr_data", 31 0, o0000023001afd898;  0 drivers
+o0000023001afd8c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4dfc0_0 .net "wr_en", 0 0, o0000023001afd8c8;  0 drivers
+S_0000023001c1e9f0 .scope module, "systolic_array" "systolic_array" 6 9;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 8 "row_clk_en";
+    .port_info 3 /INPUT 8 "col_clk_en";
+    .port_info 4 /INPUT 1 "weight_load_en";
+    .port_info 5 /INPUT 3 "weight_load_row";
+    .port_info 6 /INPUT 64 "weight_load_data";
+    .port_info 7 /INPUT 64 "act_in";
+    .port_info 8 /INPUT 1 "act_valid";
+    .port_info 9 /OUTPUT 256 "result_out";
+    .port_info 10 /OUTPUT 1 "result_valid";
+P_0000023001ab3040 .param/l "ACC_WIDTH" 0 6 12, +C4<00000000000000000000000000100000>;
+P_0000023001ab3078 .param/l "DATA_WIDTH" 0 6 11, +C4<00000000000000000000000000001000>;
+P_0000023001ab30b0 .param/l "N" 0 6 10, +C4<00000000000000000000000000001000>;
+o0000023001afdaa8 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4dca0_0 .net "act_in", 63 0, o0000023001afdaa8;  0 drivers
+o0000023001afdad8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4e060_0 .net "act_valid", 0 0, o0000023001afdad8;  0 drivers
+o0000023001afdb08 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4cda0_0 .net "clk", 0 0, o0000023001afdb08;  0 drivers
+o0000023001afdb38 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4d520_0 .net "col_clk_en", 7 0, o0000023001afdb38;  0 drivers
+o0000023001afdb68 .functor BUFZ 256, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4ce40_0 .net "result_out", 255 0, o0000023001afdb68;  0 drivers
+o0000023001afdb98 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d340_0 .net "result_valid", 0 0, o0000023001afdb98;  0 drivers
+o0000023001afdbc8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000023001b4cee0_0 .net "row_clk_en", 7 0, o0000023001afdbc8;  0 drivers
+o0000023001afdbf8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4cf80_0 .net "rst_n", 0 0, o0000023001afdbf8;  0 drivers
+o0000023001afdc28 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000023001b4d160_0 .net "weight_load_data", 63 0, o0000023001afdc28;  0 drivers
+o0000023001afdc58 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023001b4d200_0 .net "weight_load_en", 0 0, o0000023001afdc58;  0 drivers
+o0000023001afdc88 .functor BUFZ 3, C4<zzz>; HiZ drive
+v0000023001b4d660_0 .net "weight_load_row", 2 0, o0000023001afdc88;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "rtl/accelerator_top.v";
+    "rtl/axi_lite_slave.v";
+    "rtl/pe.v";
+    "rtl/ping_pong_buffer.v";
+    "rtl/systolic_array.v";
