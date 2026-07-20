@@ -1,0 +1,55 @@
+================================================
+  AXI4-Lite Slave & BFM Testbench  (Phase 4)
+================================================
+
+--- Test 1: Write and Read back ---
+DBG: calling axi_write WEIGHT_DATA[1]
+[PASS] Write WEIGHT_DATA[1] response : expected 0x00000000, got 0x00000000
+[PASS] Read back WEIGHT_DATA[1] value : expected 0x11223344, got 0x11223344
+[PASS] Read back WEIGHT_DATA[1] response : expected 0x00000000, got 0x00000000
+[PASS] Write ACT_DATA[3] response : expected 0x00000000, got 0x00000000
+[PASS] Read back ACT_DATA[3] value : expected 0x55667788, got 0x55667788
+[PASS] Write CLK_GATE_CTRL response : expected 0x00000000, got 0x00000000
+[PASS] Read back CLK_GATE_CTRL value : expected 0x00001234, got 0x00001234
+
+--- Test 2: CTRL Self-Clearing Timing ---
+[PASS] Write CTRL START response : expected 0x00000000, got 0x00000000
+[PASS] CTRL read-back is 0 (self-cleared) : expected 0x00000000, got 0x00000000
+[PASS] ctrl_start was pulsed high for 1 cycle : expected 0x00000001, got 0x00000001
+
+--- Test 3: STATUS Read-Only ---
+[PASS] Write to STATUS response (silently ignored) : expected 0x00000000, got 0x00000000
+[PASS] STATUS read back matches forced values (not overridden by write) : expected 0x00000003, got 0x00000003
+
+--- Test 4: RESULT_RAW / RESULT_SAT Read-Only & Read Verification ---
+[PASS] Write to RESULT_RAW response (ignored) : expected 0x00000000, got 0x00000000
+[PASS] RESULT_RAW read back correct : expected 0x12345678, got 0x12345678
+[PASS] Write to RESULT_SAT response (ignored) : expected 0x00000000, got 0x00000000
+[PASS] RESULT_SAT read back correct : expected 0x87654321, got 0x87654321
+
+--- Test 5: Reserved range ---
+[PASS] Write to reserved range response (ignored) : expected 0x00000000, got 0x00000000
+[PASS] Read from reserved range returns 0 : expected 0x00000000, got 0x00000000
+
+--- Test 6: Back-to-back Transactions ---
+[PASS] Back-to-back read 1 : expected 0x11111111, got 0x11111111
+[PASS] Back-to-back read 2 : expected 0x22222222, got 0x22222222
+[PASS] Back-to-back read 3 : expected 0x33333333, got 0x33333333
+
+--- Test 7: Address/Data on Separate Cycles ---
+[PASS] Skewed Write Address-first response : expected 0x00000000, got 0x00000000
+[PASS] Read back skew write 1 : expected 0xaaaaaaaa, got 0xaaaaaaaa
+[PASS] Skewed Write Data-first response : expected 0x00000000, got 0x00000000
+[PASS] Read back skew write 2 : expected 0xbbbbbbbb, got 0xbbbbbbbb
+
+--- Test 8: Read Data Registration Verification ---
+[PASS] Registered RDATA reads correct value : expected 0x55555555, got 0x55555555
+[PASS] Registered RDATA read response OKAY : expected 0x00000000, got 0x00000000
+
+================================================
+  Results: 27 passed, 0 failed
+================================================
+  >>> ALL TESTS PASSED <<<
+================================================
+
+tb/axi_lite_slave_tb.v:350: $finish called at 1675000 (1ps)

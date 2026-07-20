@@ -95,6 +95,7 @@ module axi_lite_master_bfm #(
                 @(posedge aclk);
             end
             resp         = m_axi_bresp;
+            @(posedge aclk);      // Let slave see bready=1 in W_RESP
             m_axi_bready = 1'b0;
             @(posedge aclk);
         end
@@ -166,6 +167,7 @@ module axi_lite_master_bfm #(
                 @(posedge aclk);
             end
             resp         = m_axi_bresp;
+            @(posedge aclk);      // Let slave see bready=1 in W_RESP
             m_axi_bready = 1'b0;
             @(posedge aclk);
         end
@@ -195,6 +197,7 @@ module axi_lite_master_bfm #(
             end
             returned_data = m_axi_rdata;
             resp          = m_axi_rresp;
+            @(posedge aclk);      // Let slave see rready=1 in R_RESP
             m_axi_rready  = 1'b0;
             @(posedge aclk);
         end

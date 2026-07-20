@@ -1,0 +1,1414 @@
+================================================
+  Full Integration Testbench  (Phase 5)
+================================================
+
+--- TEST 1: Identity Weight Matrix ---
+DBG cnt=8 col0=11 col1=0 col2=0 mem0=0 mem1=0 mem2=0 mem8=0
+DBG cnt=9 col0=21 col1=12 col2=0 mem0=11 mem1=0 mem2=0 mem8=0
+DBG cnt=10 col0=31 col1=22 col2=13 mem0=11 mem1=12 mem2=0 mem8=21
+DBG cnt=11 col0=41 col1=32 col2=23 mem0=11 mem1=12 mem2=13 mem8=21
+DBG cnt=12 col0=51 col1=42 col2=33 mem0=11 mem1=12 mem2=13 mem8=21
+DBG cnt=13 col0=61 col1=52 col2=43 mem0=11 mem1=12 mem2=13 mem8=21
+DBG cnt=14 col0=71 col1=62 col2=53 mem0=11 mem1=12 mem2=13 mem8=21
+DBG cnt=15 col0=81 col1=72 col2=63 mem0=11 mem1=12 mem2=13 mem8=21
+DBG cnt=16 col0=0 col1=82 col2=73 mem0=11 mem1=12 mem2=13 mem8=21
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[PASS]                                                                 Identity RAW[ 0] : expected 0x0000000b, got 0x0000000b
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 1] : expected 0x0000000c, got 0x0000000b
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 2] : expected 0x0000000d, got 0x0000000c
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 3] : expected 0x0000000e, got 0x0000000d
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 4] : expected 0x0000000f, got 0x0000000e
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 5] : expected 0x00000010, got 0x0000000f
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 6] : expected 0x00000011, got 0x00000010
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 7] : expected 0x00000012, got 0x00000011
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 8] : expected 0x00000015, got 0x00000012
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[ 9] : expected 0x00000016, got 0x00000015
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[10] : expected 0x00000017, got 0x00000016
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[11] : expected 0x00000018, got 0x00000017
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[12] : expected 0x00000019, got 0x00000018
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[13] : expected 0x0000001a, got 0x00000019
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[14] : expected 0x0000001b, got 0x0000001a
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[15] : expected 0x0000001c, got 0x0000001b
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[16] : expected 0x0000001f, got 0x0000001c
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[17] : expected 0x00000020, got 0x0000001f
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[18] : expected 0x00000021, got 0x00000020
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[19] : expected 0x00000022, got 0x00000021
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[20] : expected 0x00000023, got 0x00000022
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[21] : expected 0x00000024, got 0x00000023
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[22] : expected 0x00000025, got 0x00000024
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[23] : expected 0x00000026, got 0x00000025
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[24] : expected 0x00000029, got 0x00000026
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[25] : expected 0x0000002a, got 0x00000029
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[26] : expected 0x0000002b, got 0x0000002a
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[27] : expected 0x0000002c, got 0x0000002b
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[28] : expected 0x0000002d, got 0x0000002c
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[29] : expected 0x0000002e, got 0x0000002d
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[30] : expected 0x0000002f, got 0x0000002e
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[31] : expected 0x00000030, got 0x0000002f
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[32] : expected 0x00000033, got 0x00000030
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[33] : expected 0x00000034, got 0x00000033
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[34] : expected 0x00000035, got 0x00000034
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[35] : expected 0x00000036, got 0x00000035
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[36] : expected 0x00000037, got 0x00000036
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[37] : expected 0x00000038, got 0x00000037
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[38] : expected 0x00000039, got 0x00000038
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[39] : expected 0x0000003a, got 0x00000039
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[40] : expected 0x0000003d, got 0x0000003a
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[41] : expected 0x0000003e, got 0x0000003d
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[42] : expected 0x0000003f, got 0x0000003e
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[43] : expected 0x00000040, got 0x0000003f
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[44] : expected 0x00000041, got 0x00000040
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[45] : expected 0x00000042, got 0x00000041
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[46] : expected 0x00000043, got 0x00000042
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[47] : expected 0x00000044, got 0x00000043
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[48] : expected 0x00000047, got 0x00000044
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[49] : expected 0x00000048, got 0x00000047
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[50] : expected 0x00000049, got 0x00000048
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[51] : expected 0x0000004a, got 0x00000049
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[52] : expected 0x0000004b, got 0x0000004a
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[53] : expected 0x0000004c, got 0x0000004b
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[54] : expected 0x0000004d, got 0x0000004c
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[55] : expected 0x0000004e, got 0x0000004d
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[56] : expected 0x00000051, got 0x0000004e
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[57] : expected 0x00000052, got 0x00000051
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[58] : expected 0x00000053, got 0x00000052
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[59] : expected 0x00000054, got 0x00000053
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[60] : expected 0x00000055, got 0x00000054
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[61] : expected 0x00000056, got 0x00000055
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[62] : expected 0x00000057, got 0x00000056
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+[FAIL]                                                                 Identity RAW[63] : expected 0x00000058, got 0x00000057
+
+--- TEST 2: All Ones Weight Matrix ---
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+FINAL mem0=11 mem1=12 mem2=13 mem3=14 mem8=21 mem9=22
+DBG cnt=8 col0=116 col1=0 col2=0 mem0=0 mem1=0 mem2=0 mem8=0
+DBG cnt=9 col0=196 col1=116 col2=0 mem0=116 mem1=0 mem2=0 mem8=0
+DBG cnt=10 col0=276 col1=196 col2=116 mem0=116 mem1=116 mem2=0 mem8=196
+DBG cnt=11 col0=356 col1=276 col2=196 mem0=116 mem1=116 mem2=116 mem8=196
+DBG cnt=12 col0=436 col1=356 col2=276 mem0=116 mem1=116 mem2=116 mem8=196
+DBG cnt=13 col0=516 col1=436 col2=356 mem0=116 mem1=116 mem2=116 mem8=196
+DBG cnt=14 col0=596 col1=516 col2=436 mem0=116 mem1=116 mem2=116 mem8=196
+DBG cnt=15 col0=676 col1=596 col2=516 mem0=116 mem1=116 mem2=116 mem8=196
+DBG cnt=16 col0=0 col1=676 col2=596 mem0=116 mem1=116 mem2=116 mem8=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[ 0] : expected 0x00000074, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 1] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 2] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 3] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 4] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 5] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 6] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 7] : expected 0x00000074, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[ 8] : expected 0x000000c4, got 0x00000074
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[ 9] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[10] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[11] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[12] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[13] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[14] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[15] : expected 0x000000c4, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[16] : expected 0x00000114, got 0x000000c4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[17] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[18] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[19] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[20] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[21] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[22] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[23] : expected 0x00000114, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[24] : expected 0x00000164, got 0x00000114
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[25] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[26] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[27] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[28] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[29] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[30] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[31] : expected 0x00000164, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[32] : expected 0x000001b4, got 0x00000164
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[33] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[34] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[35] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[36] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[37] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[38] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[39] : expected 0x000001b4, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[40] : expected 0x00000204, got 0x000001b4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[41] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[42] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[43] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[44] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[45] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[46] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[47] : expected 0x00000204, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[48] : expected 0x00000254, got 0x00000204
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[49] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[50] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[51] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[52] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[53] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[54] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[55] : expected 0x00000254, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[FAIL]                                                                 All-ones RAW[56] : expected 0x000002a4, got 0x00000254
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[57] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[58] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[59] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[60] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[61] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[62] : expected 0x000002a4, got 0x000002a4
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+[PASS]                                                                 All-ones RAW[63] : expected 0x000002a4, got 0x000002a4
+
+--- TEST 3: Ramp Weight Matrix ---
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+FINAL mem0=116 mem1=116 mem2=116 mem3=116 mem8=196 mem9=196
+DBG cnt=8 col0=448 col1=0 col2=0 mem0=0 mem1=0 mem2=0 mem8=0
+DBG cnt=9 col0=728 col1=564 col2=0 mem0=448 mem1=0 mem2=0 mem8=0
+DBG cnt=10 col0=1008 col1=924 col2=680 mem0=448 mem1=564 mem2=0 mem8=728
+DBG cnt=11 col0=1288 col1=1284 col2=1120 mem0=448 mem1=564 mem2=680 mem8=728
+DBG cnt=12 col0=1568 col1=1644 col2=1560 mem0=448 mem1=564 mem2=680 mem8=728
+DBG cnt=13 col0=1848 col1=2004 col2=2000 mem0=448 mem1=564 mem2=680 mem8=728
+DBG cnt=14 col0=2128 col1=2364 col2=2440 mem0=448 mem1=564 mem2=680 mem8=728
+DBG cnt=15 col0=2408 col1=2724 col2=2880 mem0=448 mem1=564 mem2=680 mem8=728
+DBG cnt=16 col0=0 col1=3084 col2=3320 mem0=448 mem1=564 mem2=680 mem8=728
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 0] : expected 0x000001c0, got 0x00001be4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 1] : expected 0x00000234, got 0x000001c0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 2] : expected 0x000002a8, got 0x00000234
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 3] : expected 0x0000031c, got 0x000002a8
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 4] : expected 0x00000390, got 0x0000031c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 5] : expected 0x00000404, got 0x00000390
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 6] : expected 0x00000478, got 0x00000404
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 7] : expected 0x000004ec, got 0x00000478
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 8] : expected 0x000002d8, got 0x000004ec
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[ 9] : expected 0x0000039c, got 0x000002d8
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[10] : expected 0x00000460, got 0x0000039c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[11] : expected 0x00000524, got 0x00000460
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[12] : expected 0x000005e8, got 0x00000524
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[13] : expected 0x000006ac, got 0x000005e8
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[14] : expected 0x00000770, got 0x000006ac
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[15] : expected 0x00000834, got 0x00000770
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[16] : expected 0x000003f0, got 0x00000834
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[17] : expected 0x00000504, got 0x000003f0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[18] : expected 0x00000618, got 0x00000504
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[19] : expected 0x0000072c, got 0x00000618
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[20] : expected 0x00000840, got 0x0000072c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[21] : expected 0x00000954, got 0x00000840
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[22] : expected 0x00000a68, got 0x00000954
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[23] : expected 0x00000b7c, got 0x00000a68
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[24] : expected 0x00000508, got 0x00000b7c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[25] : expected 0x0000066c, got 0x00000508
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[26] : expected 0x000007d0, got 0x0000066c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[27] : expected 0x00000934, got 0x000007d0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[28] : expected 0x00000a98, got 0x00000934
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[29] : expected 0x00000bfc, got 0x00000a98
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[30] : expected 0x00000d60, got 0x00000bfc
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[31] : expected 0x00000ec4, got 0x00000d60
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[32] : expected 0x00000620, got 0x00000ec4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[33] : expected 0x000007d4, got 0x00000620
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[34] : expected 0x00000988, got 0x000007d4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[35] : expected 0x00000b3c, got 0x00000988
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[36] : expected 0x00000cf0, got 0x00000b3c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[37] : expected 0x00000ea4, got 0x00000cf0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[38] : expected 0x00001058, got 0x00000ea4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[39] : expected 0x0000120c, got 0x00001058
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[40] : expected 0x00000738, got 0x0000120c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[41] : expected 0x0000093c, got 0x00000738
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[42] : expected 0x00000b40, got 0x0000093c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[43] : expected 0x00000d44, got 0x00000b40
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[44] : expected 0x00000f48, got 0x00000d44
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[45] : expected 0x0000114c, got 0x00000f48
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[46] : expected 0x00001350, got 0x0000114c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[47] : expected 0x00001554, got 0x00001350
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[48] : expected 0x00000850, got 0x00001554
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[49] : expected 0x00000aa4, got 0x00000850
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[50] : expected 0x00000cf8, got 0x00000aa4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[51] : expected 0x00000f4c, got 0x00000cf8
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[52] : expected 0x000011a0, got 0x00000f4c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[53] : expected 0x000013f4, got 0x000011a0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[54] : expected 0x00001648, got 0x000013f4
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[55] : expected 0x0000189c, got 0x00001648
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[56] : expected 0x00000968, got 0x0000189c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[57] : expected 0x00000c0c, got 0x00000968
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[58] : expected 0x00000eb0, got 0x00000c0c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[59] : expected 0x00001154, got 0x00000eb0
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[60] : expected 0x000013f8, got 0x00001154
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[61] : expected 0x0000169c, got 0x000013f8
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[62] : expected 0x00001940, got 0x0000169c
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+FINAL mem0=448 mem1=564 mem2=680 mem3=796 mem8=728 mem9=924
+[FAIL]                                                                     Ramp RAW[63] : expected 0x00001be4, got 0x00001940
+
+================================================
+  Results: 57 passed, 135 failed
+================================================
+  >>> SOME TESTS FAILED <<<
+================================================
+
+tb/accelerator_top_tb.v:285: $finish called at 18875000 (1ps)

@@ -69,11 +69,11 @@ module axi_lite_slave #(
     output reg  [DATA_WIDTH-1:0]       act_wr_data,
 
     // ---- Result readback interface (raw 32-bit accumulators) ----
-    output reg  [5:0]                  result_raw_addr,
+    output wire [5:0]                  result_raw_addr,
     input  wire [DATA_WIDTH-1:0]       result_raw_rdata,
 
     // ---- Result readback interface (saturated INT8 packed) ----
-    output reg  [3:0]                  result_sat_addr,
+    output wire [3:0]                  result_sat_addr,
     input  wire [DATA_WIDTH-1:0]       result_sat_rdata
 );
 
@@ -84,39 +84,70 @@ module axi_lite_slave #(
     // ---- Stand-in internal storage for Phase 4 ----
     reg [DATA_WIDTH-1:0] weight_mem [0:15];
     reg [DATA_WIDTH-1:0] act_mem    [0:15];
-    reg [DATA_WIDTH-1:0] raw_mem    [0:63];
-    reg [DATA_WIDTH-1:0] sat_mem    [0:15];
 
-    // ---- FSM States for Write Channel ----
-    localparam W_IDLE = 1'b0;
-    localparam W_RESP = 1'b1;
-    reg w_state;
-
-    // Write capture registers
     reg [ADDR_WIDTH-1:0] awaddr_reg;
-    reg                  awvalid_reg;
     reg [DATA_WIDTH-1:0] wdata_reg;
-    reg                  wvalid_reg;
+    reg [ADDR_WIDTH-1:0] araddr_reg;
 
-    // ---- FSM States for Read Channel ----
-    localparam R_IDLE = 1'b0;
-    localparam R_RESP = 1'b1;
-    reg r_state;
+    reg aw_done;
+    reg w_done;
+    reg ar_done;
 
-    // ---- Write Channel Logic ----
+    // ---- Write Address Channel (AW) ----
     always @(posedge aclk) begin
         if (!aresetn) begin
-            w_state         <= W_IDLE;
-            s_axi_awready   <= 1'b0;
-            s_axi_wready    <= 1'b0;
+            s_axi_awready <= 1'b0;
+            awaddr_reg    <= 0;
+        end else begin
+            if (s_axi_awvalid && !s_axi_awready && !aw_done) begin
+                s_axi_awready <= 1'b1;
+                awaddr_reg    <= s_axi_awaddr;
+            end else begin
+                s_axi_awready <= 1'b0;
+            end
+        end
+    end
+
+    // ---- Write Data Channel (W) ----
+    always @(posedge aclk) begin
+        if (!aresetn) begin
+            s_axi_wready <= 1'b0;
+            wdata_reg    <= 0;
+        end else begin
+            if (s_axi_wvalid && !s_axi_wready && !w_done) begin
+                s_axi_wready <= 1'b1;
+                wdata_reg    <= s_axi_wdata;
+            end else begin
+                s_axi_wready <= 1'b0;
+            end
+        end
+    end
+
+    // ---- Write Handshake Control (aw_done / w_done) ----
+    always @(posedge aclk) begin
+        if (!aresetn) begin
+            aw_done <= 1'b0;
+            w_done  <= 1'b0;
+        end else begin
+            if (s_axi_awvalid && s_axi_awready) begin
+                aw_done <= 1'b1;
+            end else if (s_axi_bvalid && s_axi_bready) begin
+                aw_done <= 1'b0;
+            end
+
+            if (s_axi_wvalid && s_axi_wready) begin
+                w_done <= 1'b1;
+            end else if (s_axi_bvalid && s_axi_bready) begin
+                w_done <= 1'b0;
+            end
+        end
+    end
+
+    // ---- Write Execution and Response (B) ----
+    always @(posedge aclk) begin
+        if (!aresetn) begin
             s_axi_bvalid    <= 1'b0;
             s_axi_bresp     <= RESP_OKAY;
-            awaddr_reg      <= 0;
-            awvalid_reg     <= 1'b0;
-            wdata_reg       <= 0;
-            wvalid_reg      <= 1'b0;
-            
-            // Register resets
             ctrl_start      <= 1'b0;
             ctrl_soft_reset <= 1'b0;
             clk_gate_row_en <= 8'h00;
@@ -128,161 +159,109 @@ module axi_lite_slave #(
             act_wr_addr     <= 0;
             act_wr_data     <= 0;
         end else begin
-            // Pulses only last 1 cycle
             ctrl_start      <= 1'b0;
             ctrl_soft_reset <= 1'b0;
             weight_wr_en    <= 1'b0;
             act_wr_en       <= 1'b0;
 
-            case (w_state)
-                W_IDLE: begin
-                    s_axi_bvalid <= 1'b0;
-                    
-                    // Capture Write Address
-                    if (s_axi_awvalid && !awvalid_reg) begin
-                        awaddr_reg    <= s_axi_awaddr;
-                        awvalid_reg   <= 1'b1;
-                        s_axi_awready <= 1'b1;
-                    end else begin
-                        s_axi_awready <= 1'b0;
-                    end
-
-                    // Capture Write Data
-                    if (s_axi_wvalid && !wvalid_reg) begin
-                        wdata_reg    <= s_axi_wdata;
-                        wvalid_reg   <= 1'b1;
-                        s_axi_wready <= 1'b1;
-                    end else begin
-                        s_axi_wready <= 1'b0;
-                    end
-
-                    if ((awvalid_reg || (s_axi_awvalid && s_axi_awready)) &&
-                        (wvalid_reg  || (s_axi_wvalid  && s_axi_wready))) begin
-                        begin : write_exec
-                            reg [ADDR_WIDTH-1:0] write_addr;
-                            reg [DATA_WIDTH-1:0] write_data;
-                            write_addr = awvalid_reg ? awaddr_reg : s_axi_awaddr;
-                            write_data = wvalid_reg  ? wdata_reg  : s_axi_wdata;
-
-                            // Clear handshakes for AW/W
-                            s_axi_awready <= 1'b0;
-                            s_axi_wready  <= 1'b0;
-                            awvalid_reg   <= 1'b0;
-                            wvalid_reg    <= 1'b0;
-
-                            // Decode Address
-                            if (write_addr > 10'h3FF) begin
-                                // Out of bounds address space limit -> SLVERR
-                                s_axi_bresp <= RESP_SLVERR;
-                            end else begin
-                                s_axi_bresp <= RESP_OKAY; // In bounds
-
-                                if (write_addr >= 10'h000 && write_addr <= 10'h03C) begin
-                                    // WEIGHT_DATA
-                                    weight_mem[write_addr[5:2]] <= write_data;
-                                    weight_wr_en   <= 1'b1;
-                                    weight_wr_addr <= write_addr[5:2];
-                                    weight_wr_data <= write_data;
-                                end else if (write_addr >= 10'h040 && write_addr <= 10'h07C) begin
-                                    // ACT_DATA
-                                    act_mem[write_addr[5:2]] <= write_data;
-                                    act_wr_en   <= 1'b1;
-                                    act_wr_addr <= write_addr[5:2];
-                                    act_wr_data <= write_data;
-                                end else if (write_addr == 10'h080) begin
-                                    // CTRL register
-                                    ctrl_start      <= write_data[0];
-                                    ctrl_soft_reset <= write_data[1];
-                                end else if (write_addr == 10'h088) begin
-                                    // CLK_GATE_CTRL
-                                    clk_gate_row_en <= write_data[7:0];
-                                    clk_gate_col_en <= write_data[15:8];
-                                end
-                                // Other registers (STATUS 0x084, RESULT_RAW 0x100-0x1FC, RESULT_SAT 0x200-0x23C, and reserved)
-                                // are either read-only or ignored -> silently ignored (OKAY response).
-                            end
-
-                            s_axi_bvalid <= 1'b1;
-                            w_state      <= W_RESP;
-                        end
+            if (aw_done && w_done && !s_axi_bvalid) begin
+                s_axi_bvalid <= 1'b1;
+                if (awaddr_reg > 10'h3FF) begin
+                    s_axi_bresp <= RESP_SLVERR;
+                end else begin
+                    s_axi_bresp <= RESP_OKAY;
+                    if (awaddr_reg >= 10'h000 && awaddr_reg <= 10'h03C) begin
+                        weight_mem[awaddr_reg[5:2]] <= wdata_reg;
+                        weight_wr_en   <= 1'b1;
+                        weight_wr_addr <= awaddr_reg[5:2];
+                        weight_wr_data <= wdata_reg;
+                    end else if (awaddr_reg >= 10'h040 && awaddr_reg <= 10'h07C) begin
+                        act_mem[awaddr_reg[5:2]] <= wdata_reg;
+                        act_wr_en   <= 1'b1;
+                        act_wr_addr <= awaddr_reg[5:2];
+                        act_wr_data <= wdata_reg;
+                    end else if (awaddr_reg == 10'h080) begin
+                        ctrl_start      <= wdata_reg[0];
+                        ctrl_soft_reset <= wdata_reg[1];
+                    end else if (awaddr_reg == 10'h088) begin
+                        clk_gate_row_en <= wdata_reg[7:0];
+                        clk_gate_col_en <= wdata_reg[15:8];
                     end
                 end
-
-                W_RESP: begin
-                    if (s_axi_bready) begin
-                        s_axi_bvalid <= 1'b0;
-                        w_state      <= W_IDLE;
-                    end
-                end
-            endcase
+            end else if (s_axi_bvalid && s_axi_bready) begin
+                s_axi_bvalid <= 1'b0;
+            end
         end
     end
 
-    // ---- Read Channel Logic ----
+    // ---- Read Address Channel (AR) ----
     always @(posedge aclk) begin
         if (!aresetn) begin
-            r_state         <= R_IDLE;
-            s_axi_arready   <= 1'b0;
+            s_axi_arready <= 1'b0;
+            araddr_reg    <= 0;
+        end else begin
+            if (s_axi_arvalid && !s_axi_arready && !ar_done) begin
+                s_axi_arready <= 1'b1;
+                araddr_reg    <= s_axi_araddr;
+            end else begin
+                s_axi_arready <= 1'b0;
+            end
+        end
+    end
+
+    // ---- Read Handshake Control (ar_done) ----
+    always @(posedge aclk) begin
+        if (!aresetn) begin
+            ar_done <= 1'b0;
+        end else begin
+            if (s_axi_arvalid && s_axi_arready) begin
+                ar_done <= 1'b1;
+            end else if (s_axi_rvalid && s_axi_rready) begin
+                ar_done <= 1'b0;
+            end
+        end
+    end
+
+    // ---- Read Execution and Response (R) ----
+    always @(posedge aclk) begin
+        if (!aresetn) begin
             s_axi_rvalid    <= 1'b0;
             s_axi_rdata     <= 0;
             s_axi_rresp     <= RESP_OKAY;
-            result_raw_addr <= 0;
-            result_sat_addr <= 0;
         end else begin
-            case (r_state)
-                R_IDLE: begin
-                    s_axi_arready <= 1'b1;
-                    if (s_axi_arvalid && s_axi_arready) begin
-                        s_axi_arready <= 1'b0;
-                        s_axi_rvalid  <= 1'b1;
-
-                        // Perform address decoding and read registering
-                        if (s_axi_araddr > 10'h3FF) begin
-                            s_axi_rdata <= 0;
-                            s_axi_rresp <= RESP_SLVERR;
-                        end else begin
-                            s_axi_rresp <= RESP_OKAY;
-                            
-                            if (s_axi_araddr >= 10'h000 && s_axi_araddr <= 10'h03C) begin
-                                // WEIGHT_DATA
-                                s_axi_rdata <= weight_mem[s_axi_araddr[5:2]];
-                            end else if (s_axi_araddr >= 10'h040 && s_axi_araddr <= 10'h07C) begin
-                                // ACT_DATA
-                                s_axi_rdata <= act_mem[s_axi_araddr[5:2]];
-                            end else if (s_axi_araddr == 10'h080) begin
-                                // CTRL: read always returns 0 because START and SOFT_RESET are self-clearing
-                                s_axi_rdata <= 0;
-                            end else if (s_axi_araddr == 10'h084) begin
-                                // STATUS
-                                s_axi_rdata <= {30'd0, status_done, status_busy};
-                            end else if (s_axi_araddr == 10'h088) begin
-                                // CLK_GATE_CTRL
-                                s_axi_rdata <= {16'd0, clk_gate_col_en, clk_gate_row_en};
-                            end else if (s_axi_araddr >= 10'h100 && s_axi_araddr <= 10'h1FC) begin
-                                // RESULT_RAW
-                                s_axi_rdata     <= raw_mem[s_axi_araddr[7:2]];
-                                result_raw_addr <= s_axi_araddr[7:2];
-                            end else if (s_axi_araddr >= 10'h200 && s_axi_araddr <= 10'h23C) begin
-                                // RESULT_SAT
-                                s_axi_rdata     <= sat_mem[s_axi_araddr[5:2]];
-                                result_sat_addr <= s_axi_araddr[5:2];
-                            end else begin
-                                // Reserved range -> returns 0
-                                s_axi_rdata <= 0;
-                            end
-                        end
-                        r_state <= R_RESP;
+            if (ar_done && !s_axi_rvalid) begin
+                s_axi_rvalid <= 1'b1;
+                if (araddr_reg > 10'h3FF) begin
+                    s_axi_rdata <= 0;
+                    s_axi_rresp <= RESP_SLVERR;
+                end else begin
+                    s_axi_rresp <= RESP_OKAY;
+                    if (araddr_reg >= 10'h000 && araddr_reg <= 10'h03C) begin
+                        s_axi_rdata <= weight_mem[araddr_reg[5:2]];
+                    end else if (araddr_reg >= 10'h040 && araddr_reg <= 10'h07C) begin
+                        s_axi_rdata <= act_mem[araddr_reg[5:2]];
+                    end else if (araddr_reg == 10'h080) begin
+                        s_axi_rdata <= 0;
+                    end else if (araddr_reg == 10'h084) begin
+                        s_axi_rdata <= {30'd0, status_done, status_busy};
+                    end else if (araddr_reg == 10'h088) begin
+                        s_axi_rdata <= {16'd0, clk_gate_col_en, clk_gate_row_en};
+                    end else if (araddr_reg >= 10'h100 && araddr_reg <= 10'h1FC) begin
+                        s_axi_rdata <= result_raw_rdata;
+                    end else if (araddr_reg >= 10'h200 && araddr_reg <= 10'h23C) begin
+                        s_axi_rdata <= result_sat_rdata;
+                    end else begin
+                        s_axi_rdata <= 0;
                     end
                 end
-
-                R_RESP: begin
-                    if (s_axi_rready) begin
-                        s_axi_rvalid <= 1'b0;
-                        r_state      <= R_IDLE;
-                    end
-                end
-            endcase
+            end else if (s_axi_rvalid && s_axi_rready) begin
+                s_axi_rvalid <= 1'b0;
+            end
         end
     end
+
+    // Combinational assignment of read addresses to results memories
+    assign result_raw_addr = araddr_reg[7:2];
+    assign result_sat_addr = araddr_reg[5:2];
 
 endmodule
